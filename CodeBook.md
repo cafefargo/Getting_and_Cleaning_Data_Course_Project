@@ -39,8 +39,7 @@ Getting_and_Cleaning_Data_Course_Project
 * The columns in the output file, tidy.txt are as follows:
 * Subject - the subject number - there are 30 total subjects
 * ActivityLabel - the type of activity (e.g. WALKING, WALKING_UPSTAIRS, etc)
-* The rest of the columns represent the average for that particular variable.  These columns represent all the columns from the
-* raw data thad had "mean" or "std" in their names.
+* The rest of the columns represent the average for that particular variable.  These columns represent all the columns from the raw data thad had "mean" or "std" in their names.
 
 * The list of variables:
 
