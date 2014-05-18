@@ -10,8 +10,8 @@ Getting_and_Cleaning_Data_Course_Project
 * The data description is available at the site where the data was obtained:
 *     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
   
-* Data used for the project was obtained from here:
-*     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+* Data used for the project were obtained from here:
+     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
   
 ~ Code Book
 
