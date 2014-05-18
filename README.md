@@ -23,8 +23,8 @@ Getting_and_Cleaning_Data_Course_Project
 *      features.txt
 *      
 * This script reads in the above files.
-* It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and Std for standard deviation) to
-* CamelCase, and makes the names human readable.
+* It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and Std for standard deviation)
+* to CamelCase, and makes the names human readable.
 * 
 * It creates a unified data set from the 8 input files.
 * 
