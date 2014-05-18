@@ -35,7 +35,7 @@ Getting_and_Cleaning_Data_Course_Project
 * It maps the activity labels to the activity numbers for "test" and "train" so the activies are human readable, not just numbers.
 * It binds the actual data with the activity for each of "test" and "train".
 * It binds the "test" and "train" data sets together to create one large data set.
-* It subset the data to get only those columns for "Mean" for mean and "Std" for Standard Deviation 
+* It subsets the data to get only those columns for "Mean" for mean and "Std" for Standard Deviation 
 * It orders the data by subject, by activity.
 * It builds a data set, tidy.set, for each subject and activity, with the mean for each of the Mean and Standard Deviation Features.
 * 
