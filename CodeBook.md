@@ -20,12 +20,12 @@ Getting_and_Cleaning_Data_Course_Project
 
 * Examples of how the column labels have been changed in the tidy.txt data set from the raw date to make them more readable:
 
- Original Name           New Name
- tBodyAcc-mean()-X       tBodyAccelerationMeanX
- tBodyAcc-mean()-Y       tBodyAccelerationMeanY
- tBodyAcc-mean()-Z       tBodyAccelerationMeanZ
- tBodyAcc-std()-X        tBodyAccelerationStandardDeviationX
- etc                     etc
+* Original Name           New Name
+* tBodyAcc-mean()-X       tBodyAccelerationMeanX
+* tBodyAcc-mean()-Y       tBodyAccelerationMeanY
+* tBodyAcc-mean()-Z       tBodyAccelerationMeanZ
+* tBodyAcc-std()-X        tBodyAccelerationStandardDeviationX
+* etc                     etc
  
 * The activity numbers are mapped to the activity labels (i.e. 1 maps to WALKING, 2 maps to WALKING_UPSTAIRS, etc)
 * Activity Number     Activity Label
@@ -84,16 +84,16 @@ Getting_and_Cleaning_Data_Course_Project
 
 * The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-angle(): Angle between two vectors.
+* mean(): Mean value
+* std(): Standard deviation
+* meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+* angle(): Angle between two vectors.
 
 * Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
 
