@@ -18,6 +18,7 @@ Getting_and_Cleaning_Data_Course_Project
 * It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and Std for standard deviation)
 * to CamelCase, and makes the names human readable.
 
+
 * Examples of how the column labels have been changed in the tidy.txt data set from the raw date to make them more readable:
 
 * Original Name           New Name
@@ -26,6 +27,7 @@ Getting_and_Cleaning_Data_Course_Project
 * tBodyAcc-mean()-Z       tBodyAccelerationMeanZ
 * tBodyAcc-std()-X        tBodyAccelerationStandardDeviationX
 * etc                     etc
+
  
 * The activity numbers are mapped to the activity labels (i.e. 1 maps to WALKING, 2 maps to WALKING_UPSTAIRS, etc)
 * Activity Number     Activity Label
@@ -40,6 +42,8 @@ Getting_and_Cleaning_Data_Course_Project
 * Subject - the subject number - there are 30 total subjects
 * ActivityLabel - the type of activity (e.g. WALKING, WALKING_UPSTAIRS, etc)
 * The rest of the columns represent the average for that particular variable.  These columns represent all the columns from the raw data thad had "mean" or "std" in their names.
+
+
 
 * The list of variables:
 
@@ -71,6 +75,8 @@ Getting_and_Cleaning_Data_Course_Project
 * "fBodyBodyAccelerationJerkMagnitudeStandardDeviation" "fBodyBodyGyroscopeMagnitudeStandardDeviation"
 * "fBodyBodyGyroscopeJerkMagnitudeStandardDeviation"
 
+
+
 * This description below of the data was taken from the features_info.txt file included with the raw data.
 
 * The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -82,12 +88,16 @@ Getting_and_Cleaning_Data_Course_Project
 * These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
+
+
 * The set of variables that were estimated from these signals are: 
 
 * mean(): Mean value
 * std(): Standard deviation
 * meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 * angle(): Angle between two vectors.
+
+
 
 * Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
