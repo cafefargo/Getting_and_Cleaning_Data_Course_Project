@@ -20,12 +20,12 @@ Getting_and_Cleaning_Data_Course_Project
 
 * Examples of how the column labels have been changed in the tidy.txt data set from the raw date to make them more readable:
 
-* Original Name           New Name
-* tBodyAcc-mean()-X       tBodyAccelerationMeanX
-* tBodyAcc-mean()-Y       tBodyAccelerationMeanY
-* tBodyAcc-mean()-Z       tBodyAccelerationMeanZ
-* tBodyAcc-std()-X        tBodyAccelerationStandardDeviationX
-* etc                     etc
+ Original Name           New Name
+ tBodyAcc-mean()-X       tBodyAccelerationMeanX
+ tBodyAcc-mean()-Y       tBodyAccelerationMeanY
+ tBodyAcc-mean()-Z       tBodyAccelerationMeanZ
+ tBodyAcc-std()-X        tBodyAccelerationStandardDeviationX
+ etc                     etc
  
 * The activity numbers are mapped to the activity labels (i.e. 1 maps to WALKING, 2 maps to WALKING_UPSTAIRS, etc)
 * Activity Number     Activity Label
