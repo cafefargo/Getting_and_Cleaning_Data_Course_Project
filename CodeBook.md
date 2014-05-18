@@ -8,17 +8,17 @@ Getting_and_Cleaning_Data_Course_Project
 * The data used for this project represents data collected from the accelerometers from the Samsung Galaxy S smartphone.
 * The data description is available at the site where the data was obtained:
 *     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
-*   
+  
 * Data used for the project was obtained from here:
 *     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-*   
+  
 * Code Book
 *
 * It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and Std for standard deviation)
 * to CamelCase, and makes the names human readable.
-* 
+
 * Examples of how the column labels have been changed in the tidy.txt data set from the raw date to make them more readable:
-* 
+
 * Original Name           New Name
 * tBodyAcc-mean()-X       tBodyAccelerationMeanX
 * tBodyAcc-mean()-Y       tBodyAccelerationMeanY
