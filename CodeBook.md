@@ -43,8 +43,8 @@ Getting_and_Cleaning_Data_Course_Project
 
 * The list of variables:
 
-"Subject" "ActivityLabel" "tBodyAccelerationMeanX" "tBodyAccelerationMeanY" "tBodyAccelerationMeanZ" "tGravityAccelerationMeanX"
-"tGravityAccelerationMeanY" "tGravityAccelerationMeanZ" "tBodyAccelerationJerkMeanX" "tBodyAccelerationJerkMeanY"
+* "Subject" "ActivityLabel" "tBodyAccelerationMeanX" "tBodyAccelerationMeanY" "tBodyAccelerationMeanZ" "tGravityAccelerationMeanX"
+* "tGravityAccelerationMeanY" "tGravityAccelerationMeanZ" "tBodyAccelerationJerkMeanX" "tBodyAccelerationJerkMeanY"
 * "tBodyAccelerationJerkMeanZ" "tBodyGyroscopeMeanX" "tBodyGyroscopeMeanY" "tBodyGyroscopeMeanZ" "tBodyGyroscopeJerkMeanX"
 * "tBodyGyroscopeJerkMeanY" "tBodyGyroscopeJerkMeanZ" "tBodyAccelerationMagnitudeMean" "tGravityAccelerationMagnitudeMean"
 * "tBodyAccelerationJerkMagnitudeMean" "tBodyGyroscopeMagnitudeMean" "tBodyGyroscopeJerkMagnitudeMean" "fBodyAccelerationMeanX"
