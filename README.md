@@ -39,4 +39,4 @@ Getting_and_Cleaning_Data_Course_Project
 * It orders the data by subject, by activity.
 * It builds a data set, tidy.set, for each subject and activity, with the mean for each of the Mean and Standard Deviation Features.
 * 
-* It wrutes tge tidy.txt data set to the current working directory.
+* It writes the tidy.txt data set to the current working directory.
