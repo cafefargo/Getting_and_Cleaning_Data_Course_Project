@@ -19,15 +19,15 @@ Getting_and_Cleaning_Data_Course_Project
 * It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and Std for standard deviation)
 * to CamelCase, and makes the names human readable.
 * 
-* Examples of how the column labels have been changed in the tidy.txt data set to make them more readable:
+* Examples of how the column labels have been changed in the tidy.txt data set from the raw date to make them more readable:
 * 
 * Original Name           New Name
 * tBodyAcc-mean()-X       tBodyAccelerationMeanX
 * tBodyAcc-mean()-Y       tBodyAccelerationMeanY
 * tBodyAcc-mean()-Z       tBodyAccelerationMeanZ
 * tBodyAcc-std()-X        tBodyAccelerationStandardDeviationX
-* ...                     ...
-*
+* etc                     etc
+* 
 * The activity numbers are mapped to the activity labels (i.e. 1 maps to WALKING, 2 maps to WALKING_UPSTAIRS, etc)
 * Activity Number     Activity Label
 *       1             WALKING
@@ -42,3 +42,65 @@ Getting_and_Cleaning_Data_Course_Project
 * ActivityLabel - the type of activity (e.g. WALKING, WALKING_UPSTAIRS, etc)
 * The rest of the columns represent the average for that particular variable.  These columns represent all the columns from the
 * raw data thad had "mean" or "std" in their names.
+* 
+* The list of variables:
+* 
+* "Subject" "ActivityLabel" "tBodyAccelerationMeanX" "tBodyAccelerationMeanY" "tBodyAccelerationMeanZ" "tGravityAccelerationMeanX"
+* "tGravityAccelerationMeanY" "tGravityAccelerationMeanZ" "tBodyAccelerationJerkMeanX" "tBodyAccelerationJerkMeanY"
+* "tBodyAccelerationJerkMeanZ" "tBodyGyroscopeMeanX" "tBodyGyroscopeMeanY" "tBodyGyroscopeMeanZ" "tBodyGyroscopeJerkMeanX"
+* "tBodyGyroscopeJerkMeanY" "tBodyGyroscopeJerkMeanZ" "tBodyAccelerationMagnitudeMean" "tGravityAccelerationMagnitudeMean"
+* "tBodyAccelerationJerkMagnitudeMean" "tBodyGyroscopeMagnitudeMean" "tBodyGyroscopeJerkMagnitudeMean" "fBodyAccelerationMeanX"
+* "fBodyAccelerationMeanY" "fBodyAccelerationMeanZ" "fBodyAccelerationMeanFrequencyX" "fBodyAccelerationMeanFrequencyY"
+* "fBodyAccelerationMeanFrequencyZ" "fBodyAccelerationJerkMeanX" "fBodyAccelerationJerkMeanY" "fBodyAccelerationJerkMeanZ"
+* "fBodyAccelerationJerkMeanFrequencyX" "fBodyAccelerationJerkMeanFrequencyY" "fBodyAccelerationJerkMeanFrequencyZ"
+* "fBodyGyroscopeMeanX" "fBodyGyroscopeMeanY" "fBodyGyroscopeMeanZ" "fBodyGyroscopeMeanFrequencyX" "fBodyGyroscopeMeanFrequencyY"
+* "fBodyGyroscopeMeanFrequencyZ" "fBodyAccelerationMagnitudeMean" "fBodyAccelerationMagnitudeMeanFrequency"
+* "fBodyBodyAccelerationJerkMagnitudeMean" "fBodyBodyAccelerationJerkMagnitudeMeanFrequency" "fBodyBodyGyroscopeMagnitudeMean"
+* "fBodyBodyGyroscopeMagnitudeMeanFrequency" "fBodyBodyGyroscopeJerkMagnitudeMean" "fBodyBodyGyroscopeJerkMagnitudeMeanFrequency"
+* "AngletBodyAccelerationMeanGravity" "AngletBodyAccelerationJerkMeanGravityMean" "AngletBodyGyroscopeMeanGravityMean"
+* "AngletBodyGyroscopeJerkMeanGravityMean" "AngleXGravityMean" "AngleYGravityMean" "AngleZGravityMean"
+* "tBodyAccelerationStandardDeviationX" "tBodyAccelerationStandardDeviationY" "tBodyAccelerationStandardDeviationZ"
+* "tGravityAccelerationStandardDeviationX" "tGravityAccelerationStandardDeviationY" "tGravityAccelerationStandardDeviationZ"
+* "tBodyAccelerationJerkStandardDeviationX" "tBodyAccelerationJerkStandardDeviationY" "tBodyAccelerationJerkStandardDeviationZ"
+* "tBodyGyroscopeStandardDeviationX" "tBodyGyroscopeStandardDeviationY" "tBodyGyroscopeStandardDeviationZ"
+* "tBodyGyroscopeJerkStandardDeviationX" "tBodyGyroscopeJerkStandardDeviationY" "tBodyGyroscopeJerkStandardDeviationZ"
+* "tBodyAccelerationMagnitudeStandardDeviation" "tGravityAccelerationMagnitudeStandardDeviation"
+* "tBodyAccelerationJerkMagnitudeStandardDeviation" "tBodyGyroscopeMagnitudeStandardDeviation"
+* "tBodyGyroscopeJerkMagnitudeStandardDeviation" "fBodyAccelerationStandardDeviationX" "fBodyAccelerationStandardDeviationY"
+* "fBodyAccelerationStandardDeviationZ" "fBodyAccelerationJerkStandardDeviationX" "fBodyAccelerationJerkStandardDeviationY"
+* "fBodyAccelerationJerkStandardDeviationZ" "fBodyGyroscopeStandardDeviationX" "fBodyGyroscopeStandardDeviationY"
+* "fBodyGyroscopeStandardDeviationZ" "fBodyAccelerationMagnitudeStandardDeviation"
+* "fBodyBodyAccelerationJerkMagnitudeStandardDeviation" "fBodyBodyGyroscopeMagnitudeStandardDeviation"
+* "fBodyBodyGyroscopeJerkMagnitudeStandardDeviation"
+*
+* This description below of the data was taken from the features_info.txt file included with the raw data.
+* 
+* The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+* 
+* Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+* 
+* Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+* 
+* These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+*
+* The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+* 
