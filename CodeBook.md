@@ -12,8 +12,6 @@ Getting_and_Cleaning_Data_Course_Project
 * Data used for the project was obtained from here:
 *     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 *   
-*
-*
 * Code Book
 *
 * It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and Std for standard deviation)
