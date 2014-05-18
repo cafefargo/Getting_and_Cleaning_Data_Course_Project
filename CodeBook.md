@@ -1,7 +1,7 @@
 Getting_and_Cleaning_Data_Course_Project
 ========================================
 
-* Study Design
+~ Study Design
 
 * The information below was taken from the Course Project description:
 *     https://class.coursera.org/getdata-003/human_grading/view/courses/972136/assessments/3/submissions
