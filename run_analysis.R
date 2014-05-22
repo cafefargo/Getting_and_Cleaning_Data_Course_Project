@@ -36,7 +36,7 @@ activity.labels<-read.table("activity_labels.txt",header=FALSE)
 features<-read.table("features.txt",sep="", header=FALSE)
 
 ##Pretty up the column labels.  Remove "()-," characters
-##Set relevant labels (Mean for mean and Std for standard deviation) to
+##Set relevant labels (Mean for mean and StandardDeviation for std) to
 ##CamelCase.  Make names human readable.
 features.strip<-features
 features.strip[,2]<-gsub(pattern="\\(|\\)",x=features[,2],replacement="")
@@ -102,8 +102,8 @@ x.test.train<-rbind(x.test.names.activity,x.train.names.activity)
 mean_cols<-grep("Mean",colnames(x.test.train))
 std_cols<-grep("StandardDeviation",colnames(x.test.train))
 
-##Combine the "Mean", "Std", "Subject", "ActivityNumber", and
-##"ActivityLabel" columns to make the subset for just "Mean" and "Std"
+##Combine the "Mean", "StandardDeviation", "Subject", "ActivityNumber", and
+##"ActivityLabel" columns to make the subset for just "Mean" and "StandardDeviation"
 x.mean.std<-x.test.train[,c(mean_cols,std_cols,562,563,564)]
 
 ##order by subject, by activity
