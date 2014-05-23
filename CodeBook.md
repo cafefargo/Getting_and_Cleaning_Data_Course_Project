@@ -35,7 +35,7 @@ Examples of how the column labels have been changed in the tidy.txt data set fro
 * ...
 
 
-### Merging the Raw Data
+### Transforming the Raw Data
 * It combines the prettied up "features" column names with the data for "test" and "train" so that the data will have column names.
 * It sets the column names for the "Subject" vector for "test" and "train".
 * It sets the column names for the "ActivityNumber" vector for "test" and "train".
