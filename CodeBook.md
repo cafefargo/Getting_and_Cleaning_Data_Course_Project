@@ -64,11 +64,11 @@ The columns in the output file, tidy.txt are as follows:
 
 * Subject - the subject number - there are 30 total subjects.  There are 6 activities for each subject.  30 subjects * 6 activities = 180 rows of output (not including the Header)
 * ActivityLabel - the type of activity (e.g. WALKING, WALKING_UPSTAIRS, etc)
-* The rest of the columns represent the average for that particular variable.  These columns represent all the columns from the raw data that had "mean" or "std" in their names.
+* The rest of the columns represent the average for that particular variable.  These columns represent all the columns from the raw data that had "mean" or "std" in their names.  Below is the variable list.
 
 
 
-### Variable List (note: each variable is separated by a " " in tidy.txt
+### Variable List (note: each variable is separated by a space in tidy.txt)
 
 * "Subject" "ActivityLabel" "tBodyAccelerationMeanX" "tBodyAccelerationMeanY" "tBodyAccelerationMeanZ" "tGravityAccelerationMeanX"
 * "tGravityAccelerationMeanY" "tGravityAccelerationMeanZ" "tBodyAccelerationJerkMeanX" "tBodyAccelerationJerkMeanY"
