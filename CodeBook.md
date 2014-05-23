@@ -1,7 +1,7 @@
 Getting_and_Cleaning_Data_Course_Project
 ========================================
 
-~ Study Design
+## Study Design
 
 * The information below was taken from the Course Project description:
 *     https://class.coursera.org/getdata-003/human_grading/view/courses/972136/assessments/3/submissions
@@ -13,35 +13,57 @@ Getting_and_Cleaning_Data_Course_Project
 * Data used for the project were obtained from here:
      https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
   
-~ Code Book
+## Code Book
 
-* It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and Std for standard deviation)
-* to CamelCase, and makes the names human readable.
+It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and StandardDeviation for standard deviation) to CamelCase, and makes the names human readable.
 
 
-* Examples of how the column labels have been changed in the tidy.txt data set from the raw date to make them more readable:
+* Examples of how the column labels have been changed in the tidy.txt data set from the raw data to make them more readable:
 
-* Original Name           New Name
-* tBodyAcc-mean()-X       tBodyAccelerationMeanX
-* tBodyAcc-mean()-Y       tBodyAccelerationMeanY
-* tBodyAcc-mean()-Z       tBodyAccelerationMeanZ
-* tBodyAcc-std()-X        tBodyAccelerationStandardDeviationX
-* etc                     etc
+### Original Variable Name
+* tBodyAcc-mean()-X
+* tBodyAcc-mean()-Y
+* tBodyAcc-mean()-Z
+* tBodyAcc-std()-X
+* ...
+
+### New Variable Name
+* tBodyAccelerationMeanX
+* tBodyAccelerationMeanY
+* tBodyAccelerationMeanZ
+* tBodyAccelerationStandardDeviationX
+* ...
+
+
+* It combines the prettied up "features" column names with the data for "test" and "train" so that the data will have column names.
+* It sets the column names for the "Subject" vector for "test" and "train".
+* It sets the column names for the "ActivityNumber" vector for "test" and "train".
+* It combines the "ActivityNumber" column to the "Subject" data set for "test" and "train".
+* It maps the activity labels to the activity numbers for "test" and "train" so the activies are human readable, not just numbers.
+* It binds the actual data with the activity for each of "test" and "train".
+* It binds the "test" and "train" data sets together to create one large data set.
+* It subsets the data to get only those columns for mean and for Standard Deviation 
+* It orders the data by subject, by activity.
+* It builds a data set, tidy.set, for each subject and activity, with the average for each of the Mean and Standard Deviation Features.
 
  
-* The activity numbers are mapped to the activity labels (i.e. 1 maps to WALKING, 2 maps to WALKING_UPSTAIRS, etc)
-* Activity Number     Activity Label
+### Mapping Activity Numbers to Activity Labels 
+The activity numbers are mapped to the activity labels (i.e. 1 maps to WALKING, 2 maps to WALKING_UPSTAIRS, etc)
+
 *       1             WALKING
 *       2             WALKING_UPSTAIRS
 *       3             WALKING_DOWNSTAIRS
 *       4             SITTING
 *       5             STANDING
 *       6             LAYING
-* 
-* The columns in the output file, tidy.txt are as follows:
+
+
+### Output File (tidy.txt)
+The columns in the output file, tidy.txt are as follows:
+
 * Subject - the subject number - there are 30 total subjects
 * ActivityLabel - the type of activity (e.g. WALKING, WALKING_UPSTAIRS, etc)
-* The rest of the columns represent the average for that particular variable.  These columns represent all the columns from the raw data thad had "mean" or "std" in their names.
+* The rest of the columns represent the average for that particular variable.  These columns represent all the columns from the raw data that had "mean" or "std" in their names.
 
 
 
@@ -76,8 +98,9 @@ Getting_and_Cleaning_Data_Course_Project
 * "fBodyBodyGyroscopeJerkMagnitudeStandardDeviation"
 
 
+### Data Description
 
-* This description below of the data was taken from the features_info.txt file included with the raw data.
+This description below of the data was taken from the features_info.txt file included with the raw data.
 
 * The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -90,7 +113,7 @@ Getting_and_Cleaning_Data_Course_Project
 
 
 
-* The set of variables that were estimated from these signals are: 
+The set of variables that were estimated from these signals are: 
 
 * mean(): Mean value
 * std(): Standard deviation
@@ -99,7 +122,7 @@ Getting_and_Cleaning_Data_Course_Project
 
 
 
-* Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 * gravityMean
 * tBodyAccMean
