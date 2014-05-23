@@ -18,7 +18,7 @@ Getting_and_Cleaning_Data_Course_Project
 It pretties up the column labels, removes "()-," characters, sets relevant labels (Mean for mean and StandardDeviation for standard deviation) to CamelCase, and makes the names human readable.
 
 
-* Examples of how the column labels have been changed in the tidy.txt data set from the raw data to make them more readable:
+Examples of how the column labels have been changed in the tidy.txt data set from the raw data to make them more readable:
 
 ### Original Variable Name
 * tBodyAcc-mean()-X
